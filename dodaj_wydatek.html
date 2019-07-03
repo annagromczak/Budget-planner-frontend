@@ -8,7 +8,7 @@
 	<meta name="keywords" content="aplikacja internetowa, budżet osobisty, oszczędzanie, pieniądze">
 	<meta name="author" content="Anna Gromczak">
 	
-	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="css/fontello.css">
@@ -20,15 +20,17 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
 	
+	<script src="main.js"></script>
+	
 </head>
 
 <body>
 
 	<header>
 		<div class="logo"> 
-		<h1>Aplikacja internetowa do prowadzenia budżetu osobistego<h1>
+		<h1>Aplikacja internetowa do prowadzenia budżetu osobistego</h1>
 
-			<nav id="nav">
+			<nav id="menuNawigacyjne">
 				<ul class="menu">
 					<li><a href="#"> Dodaj przychód </a></li>
 					<li><a href="#"> Dodaj wydatek </a></li>
@@ -43,9 +45,78 @@
 	<main>
 		<article>
 			
-				<div class = "container">
+			<div class = "containerWydatek">
 				
-			
+				<section>
+				
+					<div class="dodajWydatek">
+				
+						<form>
+				
+							<header>Dodaj wydatek</header>
+							
+							<div class="labels">
+								<div><label>Kwota</label></div>
+								<div><label>Data</label></div>
+								<div><label for="sposobPlatnosci"> Sposób płatności </label></div>
+								<div><label for="kategoria">Kategoria </label></div>
+							</div>
+							
+							<div class="inputs">
+							
+								<div><input type="text" name="kwota"></div>
+								
+								<div><input type="text" name="data" placeholder="rrrr-mm-dd" onfocus="this.placeholder='' " onblur="this.placeholder='rrrr-mm-dd' " ></div>
+								
+								<div class="sposobPlatnosci">
+									<select id="sposobPlatnosci" name="platnosc[]">
+							
+										<option value="g">Gotówka</option>
+										<option value="d">Karta debetowa</option>
+										<option value="k">Karta kredytowa</option>
+							
+									</select>
+								</div>
+								
+								<div class="kategoria">
+									<select id="kategoria" name="kategoria[]">
+							
+										<option value="j" selected>Jedzenie</option>
+										<option value="m">Mieszkanie</option>
+										<option value="t">Transport</option>
+										<option value="tl">Telekomunikacja</option>
+										<option value="o">Opieka zdrowotna</option>
+										<option value="u">Ubranie</option>
+										<option value="h">Higiena</option>
+										<option value="d">Dzieci</option>
+										<option value="r">Rozrywka</option>
+										<option value="w">Wycieczka</option>
+										<option value="sz">Szkolenia</option>
+										<option value="k">Książki</option>
+										<option value="osz">Oszczędności</option>
+										<option value="e">Na złotą jesień, czyli emeryturę</option>
+										<option value="s">Spłata długów</option>
+										<option value="daro">Darowizna</option>
+										<option value="iw">Inne wydatki</option>
+							
+									</select>
+								</div>
+							</div>
+							
+							<div style="clear:both;"></div>
+													
+							<div class="komentarz"><label for="komentarz"> Komentarz (opcjonalnie) </label>
+							<textarea name="komentarz" id="komentarz" rows="4" cols="90" maxlength="25" minlength="10" ></textarea></div>
+							
+							<div><input type="submit" value="Dodaj"></div>
+							<div><input type="submit" value="Anuluj"></div>
+					
+						</form>
+					
+					</div>
+
+				</section>
+				
 			</div>
 			
 		</article>
@@ -53,7 +124,9 @@
 	</main>
 	
 	<footer>
+	
 		<div class="autor">
+		
 			<div class="socialdivs">
 				<div class="portfolio"><a href="http://annagromczak.com" target="_blank" class="sociallink"><i class="icon-college"></i></a></div>
 				<div class="linkedin"><a href="https://www.linkedin.com/in/anna-gromczak-630505119/" target="_blank" class="sociallink"><i class="icon-linkedin-squared"></i></a></div>
@@ -64,12 +137,9 @@
 			
 			<div class="info">
 			2019 &copy; Anna Gromczak. <i class="icon-mail-alt"></i>anna.gromczak@gmail.com</div>
+			
 		</div>
-		
-		</div>
-		
-
-		
+				
 	</footer>
 
 </body>

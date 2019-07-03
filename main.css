@@ -4,13 +4,13 @@ body
 	background-image: url("img/extra_clean_paper.png");
 	margin: 0px;
 	font-family: 'Mali', cursive;
-	font-size: 17px;
+	font-size: 20px;
 }
 
 .logo
 {
 	width: 100%;
-	height: 110px;
+	height: 115px;
 	background-color: white;
 	text-align: center;
 	padding: 15px;
@@ -87,7 +87,7 @@ input[type=email]:focus
 	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
 	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
 	border: 2px solid #00a3cc;
-	background-color: e9f3e9;
+	background-color: #e6f9ff;
 }
 
 input[type=submit]
@@ -181,19 +181,14 @@ input[type=submit]
 	background-color: #00a3cc;
 }
 
-#topnav
-{
-	background-color: #1c74b2;
-	text-align: center;
-}
-
 .menu
 {
 	list-style-type: none;
 	padding: 10px;
-	font-size: 17px;
+	font-size: 20px;
 	min-height: 38px;
 	line-height: 230%;
+	font-weight: 700;
 }
 
 .menu > li
@@ -201,6 +196,7 @@ input[type=submit]
 	display: inline-block;
 	padding-left: 20px;
 	padding-right: 20px;
+	margin-bottom: 10px;
 	border-right: 1px dashed #0a2b42;
 }
 
@@ -218,4 +214,105 @@ input[type=submit]
 .menu a:hover
 {
 	color: #00a3cc;
+}
+
+#podsumowanie
+{
+	text-align: center;
+	width: 350px;
+	height: 250px;
+	margin: auto;
+	margin-top: 50px;
+	font-weight: 700;
+}
+
+.dodajWydatek input[type=text],
+.sposobPlatnosci select,
+.kategoria select
+{
+	width: 200px;
+	height: 30px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 2px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 8px;
+}
+
+.dodajWydatek input[type=text]:focus,
+.sposobPlatnosci select:focus,
+.kategoria select:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #00a3cc;
+	background-color: #e6f9ff;
+}
+
+.dodajWydatek header
+{
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.labels
+{
+	float: left;
+	line-height: 220%;
+	text-align: left;
+	margin-left: 180px;
+	font-size: 18px;
+}
+
+.inputs
+{
+	float: left;
+	margin-left: 50px;
+	text-align: left;
+}
+
+.komentarz
+{
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 50px;
+	font-size: 18px;
+} 
+
+.containerWydatek
+{
+	background-color: white;
+	width: 760px;
+	height: 356px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	text-align: center;
+}
+
+.dodajWydatek input[type=submit]
+{
+	width: 140px;
+	background-color: #00b8e6;
+	font-size: 16px;
+	color: white;
+	padding: 6px 5px;
+	margin-top: 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	float: left;
+	margin-left: 160px;
 }
