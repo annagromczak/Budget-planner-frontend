@@ -228,7 +228,8 @@ input[type=submit]
 
 .dodajWydatek input[type=text],
 .sposobPlatnosci select,
-.kategoria select
+.kategoria select,
+.wybierzOkresSelect select
 {
 	width: 200px;
 	height: 30px;
@@ -245,7 +246,8 @@ input[type=submit]
 
 .dodajWydatek input[type=text]:focus,
 .sposobPlatnosci select:focus,
-.kategoria select:focus
+.kategoria select:focus,
+.wybierzOkresSelect select:focus
 {
 	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
 	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
@@ -254,14 +256,16 @@ input[type=submit]
 	background-color: #e6f9ff;
 }
 
-.dodajWydatek header
+.dodajWydatek header,
+.przegladajBilans header
 {
 	font-weight: 700;
 	text-align: center;
 	margin-bottom: 5px;
 }
 
-.labels
+.labels,
+.wybierzOkresLabel
 {
 	float: left;
 	line-height: 220%;
@@ -270,7 +274,8 @@ input[type=submit]
 	font-size: 18px;
 }
 
-.inputs
+.inputs,
+.wybierzOkresSelect
 {
 	float: left;
 	margin-left: 50px;
@@ -315,4 +320,65 @@ input[type=submit]
 	outline: none;
 	float: left;
 	margin-left: 160px;
+}
+
+.wybierzOkresLabel
+{
+	float: left;
+}
+
+.wybierzOkresSelect
+{
+	float: left;
+}
+
+.tabelaPrzychody
+{
+	float: left;
+	margin-left: 60px;
+}
+.tabelaWydatki
+{
+	float: left;
+	margin-left: 60px;
+}
+
+table
+{
+	font-size: 15px;
+	border: 1px solid gray;
+	margin-top: 30px;
+}
+
+tr:nth-child(even) 
+{
+	background-color: #f2f2f2;
+}
+
+td
+{
+	width: 140px;
+}
+
+.containerBilans
+{
+	background-color: white;
+	width: 760px;
+	height: 680px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	text-align: center;
+}
+
+#podsumowanieSalda
+{
+	text-align: center;
+	margin: auto;
+	margin-top: 40px;
+	font-weight: 700;
 }

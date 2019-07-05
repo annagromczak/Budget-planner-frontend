@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Budżet osobisty</title>
+	<meta name="description" content="Aplikacja internetowa do prowadzenia budżetu osobistego!">
+	<meta name="keywords" content="aplikacja internetowa, budżet osobisty, oszczędzanie, pieniądze">
+	<meta name="author" content="Anna Gromczak">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="css/fontello.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mali:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+		
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+	<script src="main.js"></script>
+	
+</head>
+
+<body onload="stanSalda();">
+
+	<header>
+		<div class="logo"> 
+		<h1>Aplikacja internetowa do prowadzenia budżetu osobistego</h1>
+
+			<nav id="menuNawigacyjne">
+				<ul class="menu">
+					<li><a href="#"> Dodaj przychód </a></li>
+					<li><a href="dodaj_wydatek.html"> Dodaj wydatek </a></li>
+					<li><a href="przegladaj_bilans.html"> Przeglądaj bilans </a></li>
+					<li><a href="#"> Ustawienia </a></li>
+					<li><a href="#"> Wyloguj </a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+ 
+	<main>
+		<article>
+			
+			<div class = "containerBilans">
+				
+				<section>
+				
+					<div class="przegladajBilans">
+				
+						<form>
+				
+							<header>Podsumowanie przychodów oraz wydatków</header>
+							
+							<div class="wybierzOkres">
+								<div class="wybierzOkresLabel"><label>Wybierz okres</label></div>
+								
+								<div class="wybierzOkresSelect"><select id="okres" name="okres[]">
+								
+											<option value="bm">Bieżący miesiąc</option>
+											<option value="p">Poprzedni miesiąc</option>
+											<option value="br">Bieżący rok</option>
+											<option value="n">Niestandardowy</option>
+								
+								</select></div>
+							
+								<div style="clear:both;"></div>
+								
+							</div>
+							
+						</form>
+							
+					</div>
+
+				</section>
+				
+				<section>
+				
+					<div id="tabele">
+					
+						<div class="tabelaPrzychody">
+						
+							<table>
+							
+								<tr>
+									<td colspan="2" style="background-color: #00b8e6; color: white; font-size: 18px;">Przychody</td>
+								</tr>
+								
+								<tr>
+									<td>Wynagrodzenie</td>
+									<td>1</td>
+								</tr>
+								
+								<tr>
+									<td>Odsetki bankowe</td>
+									<td>2</td>
+								</tr>
+								
+								<tr>
+									<td>Sprzedaż na allegro</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Inne</td>
+									<td>4</td>
+								</tr>
+								
+								<tr>
+									<td style="font-weight: 700;">Podsumowanie</td>
+									<td style="font-weight: 700;">10</td>
+								</tr>
+						
+							</table>
+						
+						</div>
+					
+						<div class="tabelaWydatki">
+						
+							<table>
+							
+								<tr>
+									<td colspan="2" style="background-color: #00b8e6; color: white; font-size: 18px;">Wydatki</td>
+								</tr>
+								
+								<tr>
+									<td>Jedzenie</td>
+									<td>1</td>
+								</tr>
+								
+								<tr>
+									<td>Mieszkanie</td>
+									<td>2</td>
+								</tr>
+								
+								<tr>
+									<td>Transport</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Telekomunikacja</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Opieka zdrowotna</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Ubranie</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Higiena</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Dzieci</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Rozrywka</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Transport</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Wycieczka</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Szkolenia</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Książki</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Oszczędności</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Na złotą jesień, czyli emeryturę</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Spłata długów</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>Darowizna</td>
+									<td>3</td>
+								</tr>
+								
+								<tr>
+									<td>Inne wydatki</td>
+									<td>4</td>
+								</tr>
+								
+								<tr>
+									<td style="font-weight: 700;">Podsumowanie</td>
+									<td style="font-weight: 700;">10</td>
+								</tr>
+						
+							</table>
+						
+						</div>
+						
+						<div style="clear:both;"></div>
+					
+					</div>
+					
+					</section>
+					
+					<div class="saldo">
+					
+						<div id="podsumowanieSalda"></div>
+					
+					</div>
+				
+			</div>
+			
+		</article>
+		
+	</main>
+	
+	<footer>
+	
+		<div class="autor">
+		
+			<div class="socialdivs">
+				<div class="portfolio"><a href="http://annagromczak.com" target="_blank" class="sociallink"><i class="icon-college"></i></a></div>
+				<div class="linkedin"><a href="https://www.linkedin.com/in/anna-gromczak-630505119/" target="_blank" class="sociallink"><i class="icon-linkedin-squared"></i></a></div>
+				<div class="github"><a href="https://github.com/annagromczak" target="_blank" class="sociallink"><i class="icon-github-circled"></i></a></div>
+				<div class="ITleaders"><a href="https://it-leaders.pl/" target="_blank" class="sociallink"><i class="icon-users"></i></a></div>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div class="info">
+			2019 &copy; Anna Gromczak. <i class="icon-mail-alt"></i>anna.gromczak@gmail.com</div>
+			
+		</div>
+				
+	</footer>
+
+</body>
+</html>
