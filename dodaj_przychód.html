@@ -136,10 +136,10 @@
 
 			<div class="container p-4">
 		
-				<div class="jumbotron col-lg-10 m-auto p-3" style="min-height: 390px;">
+				<div class="jumbotron col-lg-10 m-auto p-4" style="min-height: 390px;">
 				
-					<header class="h5 text-center">Dodaj wydatek</header>
-					
+				<header class="h5 text-center mt-1">Dodaj przychód</header>
+				
 					<div class="row">
 					
 						<div class="col-4 offset-md-1 text-right mr-3 mt-1 p-2">	
@@ -150,7 +150,7 @@
 							<input type="text" id="inputAmount" class="form-control" required autofocus>		
 						</div>
 						
-						<div class= "col-4 offset-md-1 text-right mr-3 mt-1 p-2">			
+						<div class= "col-4 offset-md-1 text-right mr-3 mt-1 p-2">
 							<label for="date">Data</label>
 						</div>
 						
@@ -159,40 +159,15 @@
 						</div>
 						
 						<div class="col-4 offset-md-1 text-right mr-3 mt-1 p-2">
-							<label for="paymentMethod">Sposób płatności</label>
-						</div>
-						
-						<div class="col-4 offste-md-1 text-center">
-							<select class="custom-select" id="paymentMethod">
-								<option value="cash" selected>Gotówka</option>
-								<option value="debit card">Karta debetowa</option>
-								<option value="credit card">Karta kredytowa</option>
-							</select>
-						</div>
-						
-						<div class="col-4 offset-md-1 text-right mr-3 mt-1 p-2">
 							<label for="category">Kategoria</label>
 						</div>
 						
 						<div class="col-4 offste-md-1 text-center">
 							<select class="custom-select" id="category">
-								<option value="j" selected>Jedzenie</option>
-								<option value="m">Mieszkanie</option>
-								<option value="t">Transport</option>
-								<option value="tl">Telekomunikacja</option>
-								<option value="o">Opieka zdrowotna</option>
-								<option value="u">Ubranie</option>
-								<option value="h">Higiena</option>
-								<option value="d">Dzieci</option>
-								<option value="r">Rozrywka</option>
-								<option value="w">Wycieczka</option>
-								<option value="sz">Szkolenia</option>
-								<option value="k">Książki</option>
-								<option value="osz">Oszczędności</option>
-								<option value="e">Na złotą jesień, czyli emeryturę</option>
-								<option value="s">Spłata długów</option>
-								<option value="daro">Darowizna</option>
-								<option value="iw">Inne wydatki</option>
+								<option value="w" selected>Wynagrodzenie</option>
+								<option value="ob">Odsetki bankowe</option>
+								<option value="sa">Sprzedaż na allegro</option>
+								<option value="i">Inne</option>
 							</select>
 						</div>
 						
@@ -200,7 +175,7 @@
 							<label for="comment">Komentarz</label>
 						</div>
 						
-						<div class="col-md-8 offset-md-2">
+						<div class="col-md-8 offset-md-2 mb-3">
 							<textarea class="form-control" id="comment" rows="3"></textarea>
 						</div>
 						

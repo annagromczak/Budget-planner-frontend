@@ -2,383 +2,82 @@ body
 {
 	/* Background pattern from Toptal Subtle Patterns */
 	background-image: url("img/extra_clean_paper.png");
-	margin: 0px;
 	font-family: 'Mali', cursive;
+}
+
+.navbar
+{
+	min-height: 61.6px;
+}
+
+.bg-navbar
+{
+	background-color: #00b8e6;
+}
+
+.navbar-nav > li > a
+{
+	color: white !important;
+	font-weight: 700;
 	font-size: 20px;
 }
 
-.logo
+.navbar-nav > li > a:hover
 {
-	width: 100%;
-	height: 115px;
+	color: #d9d9d9 !important;
+}
+
+/*
+.navbar-nav li:hover>.dropdown-menu
+{
+	display: block;
+}
+*/
+
+.jumbotron
+{
 	background-color: white;
-	text-align: center;
-	padding: 15px;
 	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 }
 
-.logo p
+.page-header h1
+{
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.page-header p
 {
 	font-size: 12px;
 	font-family: 'Pacifico', cursive;
 	color: #808080;
 	letter-spacing: 2px;
-}
-
-.logo h1
-{
-	font-size: 28px;
-	margin: 0;
-	font-weight: 700;
-	letter-spacing: 2px;
-}
-
-.container
-{
-	background-color: white;
-	width: 700px;
-	height: 296px;
-	padding: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	text-align: center;
-}
-
-.logowanie
-{
-	width: 300px;
-	float: left;
-	margin-left: 100px;
-}
-
-.rejestracja
-{
-	width: 300px;
-	float: left;
-}
-
-input[type=text],
-input[type=password],
-input[type=email]
-{
-	width: 300px;
-	background-color: #efefef;
-	color: #666;
-	border: 2px solid #ddd;
-	border-radius: 5px;
-	font-size: 16px;
-	padding: 10px;
-	box-sizing: border-box;
-	outline: none;
-	margin-top: 10px;
-}
-
-input[type=text]:focus, 
-input[type=password]:focus,
-input[type=email]:focus
-{
-	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-	border: 2px solid #00a3cc;
-	background-color: #e6f9ff;
-}
-
-input[type=submit]
-{
-	width: 300px;
-	background-color: #00b8e6;
-	font-size: 18px;
-	color: white;
-	padding: 12px 10px;
-	margin-top: 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	letter-spacing: 2px;
-	outline: none;
-}
-
-.autor
-{
-	width: 100%;
-	text-align: center;
-	background-color: white;
-	margin-top: 40px;
-	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-}
-
-.socialdivs
-{
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	border-bottom: 1px solid gray;
-}
-
-.info
-{
-	margin-left: auto;
-	margin-right: auto;
-	padding: 7px;
-	font-size: 17px;
-}
-
-.portfolio
-{
-	width: 250px;
-	height: 80px;
-	float: left;
-}
-
-.portfolio:hover
-{
-	background-color: #00a3cc;
-}
-
-.linkedin
-{
-	width: 250px;
-	height: 80px;
-	float: left;	
-}
-
-.linkedin:hover
-{
-	background-color: #00a3cc;
-}
-
-.github
-{
-	width: 250px;
-	height: 80px;
-	float: left;	
-}
-
-.github:hover
-{
-	background-color: #00a3cc;
-	color: black;
-}
-
-.ITleaders
-{
-	width: 250px;
-	height: 80px;
-	float: left;
-}
-
-.ITleaders:hover
-{
-	background-color: #00a3cc;
-}
-
-.menu
-{
-	list-style-type: none;
-	padding: 10px;
-	font-size: 20px;
-	min-height: 38px;
-	line-height: 230%;
-	font-weight: 700;
-}
-
-.menu > li
-{
-	display: inline-block;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-bottom: 10px;
-	border-right: 1px dashed #0a2b42;
-}
-
-.menu > li:first-child
-{
-	border-left: 1px dashed #0a2b42;
-}
-
-.menu a
-{
-	color: #00b8e6;
-	text-decoration: none;
-}
-
-.menu a:hover
-{
-	color: #00a3cc;
 }
 
 #podsumowanie
 {
 	text-align: center;
-	width: 350px;
-	height: 250px;
-	margin: auto;
-	margin-top: 50px;
 	font-weight: 700;
+	font-size: 22px;
 }
 
-.dodajWydatek input[type=text],
-.sposobPlatnosci select,
-.kategoria select,
-.wybierzOkresSelect select
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited
 {
-	width: 200px;
-	height: 30px;
-	background-color: #efefef;
-	color: #666;
-	border: 2px solid #ddd;
-	border-radius: 5px;
-	font-size: 16px;
-	padding: 2px;
-	box-sizing: border-box;
-	outline: none;
-	margin-top: 8px;
+	background-color: #00b8e6 !important;
+	border-color: #00b8e6 !important;
 }
 
-.dodajWydatek input[type=text]:focus,
-.sposobPlatnosci select:focus,
-.kategoria select:focus,
-.wybierzOkresSelect select:focus
-{
-	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-	border: 2px solid #00a3cc;
-	background-color: #e6f9ff;
-}
-
-.dodajWydatek header,
-.przegladajBilans header
-{
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 5px;
-}
-
-.labels,
-.wybierzOkresLabel
-{
-	float: left;
-	line-height: 220%;
-	text-align: left;
-	margin-left: 180px;
-	font-size: 18px;
-}
-
-.inputs,
-.wybierzOkresSelect
-{
-	float: left;
-	margin-left: 50px;
-	text-align: left;
-}
-
-.komentarz
-{
-	text-align: left;
-	margin-top: 20px;
-	margin-left: 50px;
-	font-size: 18px;
-} 
-
-.containerWydatek
-{
-	background-color: white;
-	width: 760px;
-	height: 356px;
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	text-align: center;
-}
-
-.dodajWydatek input[type=submit]
-{
-	width: 140px;
-	background-color: #00b8e6;
-	font-size: 16px;
-	color: white;
-	padding: 6px 5px;
-	margin-top: 15px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	letter-spacing: 2px;
-	outline: none;
-	float: left;
-	margin-left: 160px;
-}
-
-.wybierzOkresLabel
-{
-	float: left;
-}
-
-.wybierzOkresSelect
-{
-	float: left;
-}
-
-.tabelaPrzychody
-{
-	float: left;
-	margin-left: 60px;
-}
-.tabelaWydatki
-{
-	float: left;
-	margin-left: 60px;
-}
-
-table
+.table
 {
 	font-size: 15px;
-	border: 1px solid gray;
-	margin-top: 30px;
-}
-
-tr:nth-child(even) 
-{
-	background-color: #f2f2f2;
-}
-
-td
-{
-	width: 140px;
-}
-
-.containerBilans
-{
-	background-color: white;
-	width: 760px;
-	height: 680px;
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	line-height: 1;
 	text-align: center;
 }
 
-#podsumowanieSalda
-{
-	text-align: center;
-	margin: auto;
-	margin-top: 40px;
-	font-weight: 700;
-}
+
+
